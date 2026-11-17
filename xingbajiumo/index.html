@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>杏吧鸠摩智-角色二创资料整理</title>
+<meta name="description" content="杏吧鸠摩智是围绕金庸《天龙八部》鸠摩智一角展开的二创资料整理站，收录人物设定考据、经典台词对照、同人作品索引、版本差异梳理与读者讨论精选，兼顾原著细节与剧集改编差异。">
+<meta name="keywords" content="杏吧鸠摩智">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4a3e'/%3E%3Cpath d='M14 44 Q22 18 32 16 Q42 18 50 44 Q40 38 32 44 Q24 38 14 44Z' fill='%23e8d9b5'/%3E%3Ccircle cx='32' cy='27' r='4' fill='%23b5462d'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#23201b;
+  --ink-soft:#4d463c;
+  --paper:#f6f1e6;
+  --paper-2:#efe7d6;
+  --card:#fffdf7;
+  --green:#2f4a3e;
+  --green-deep:#22382e;
+  --red:#b5462d;
+  --gold:#b08a3e;
+  --line:#d9cdb4;
+  --line-soft:#e7ddc8;
+  --shadow:0 1px 2px rgba(35,32,27,.06),0 6px 18px rgba(35,32,27,.07);
+  --radius:10px;
+  --radius-sm:6px;
+  --gap:18px;
+  --fs-body:16.5px;
+  --lh:1.85;
+  --font:"Georgia","Songti SC","Noto Serif SC","Source Han Serif SC",serif;
+  --font-head:"Georgia","Songti SC","Noto Serif SC",serif;
+  --font-ui:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  --anchor-offset:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--font);
+  font-size:var(--fs-body);
+  line-height:var(--lh);
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--green-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{font-family:var(--font-head);line-height:1.35;margin:0;font-weight:700}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 1em;padding-left:1.3em}
+li{margin-bottom:.35em}
+[id]{scroll-margin-top:var(--anchor-offset)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px;border-radius:4px}
+
+/* ---------- 吸顶公告条 ---------- */
+.announce{
+  position:sticky;top:0;z-index:60;
+  background:var(--green-deep);color:#f0e8d6;
+  font-family:var(--font-ui);font-size:13px;
+  border-bottom:1px solid #16241d;
+}
+.announce .wrap{display:flex;align-items:center;gap:12px;padding:7px 20px;flex-wrap:wrap}
+.announce .tag{
+  background:var(--red);color:#fff;border-radius:3px;
+  padding:1px 7px;font-size:11.5px;letter-spacing:.06em;white-space:nowrap;
+}
+.announce p{margin:0;font-size:13px;color:#e7dcc4}
+.announce a{color:#ffd9a8;text-decoration:underline;text-underline-offset:2px}
+.announce .ameta{margin-left:auto;color:#b9c9bd;white-space:nowrap}
+
+/* ---------- 吸顶页头 ---------- */
+.site-head{
+  position:sticky;top:34px;z-index:55;
+  background:rgba(246,241,230,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.head-row{display:flex;align-items:center;gap:16px;padding:10px 20px;max-width:1180px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand-mark{width:34px;height:34px;flex:0 0 auto}
+.brand-text{font-family:var(--font-head);font-weight:700;font-size:19px;letter-spacing:.04em;color:var(--green-deep)}
+.brand-sub{display:block;font-family:var(--font-ui);font-size:10.5px;letter-spacing:.22em;color:var(--ink-soft);font-weight:400;margin-top:-2px}
+.head-nav{display:flex;gap:2px;flex-wrap:wrap;margin-left:6px}
+.head-nav a{
+  font-family:var(--font-ui);font-size:13.5px;color:var(--ink-soft);
+  padding:6px 9px;border-radius:var(--radius-sm);
+}
+.head-nav a:hover{background:var(--paper-2);color:var(--green-deep);text-decoration:none}
+.searchbox{margin-left:auto;position:relative;display:flex;align-items:center}
+.searchbox input{
+  font-family:var(--font-ui);font-size:13px;
+  border:1px solid var(--line);border-radius:20px;
+  background:var(--card);padding:7px 12px 7px 32px;width:190px;color:var(--ink);
+}
+.searchbox input:focus{outline:2px solid var(--green);outline-offset:1px}
+.searchbox svg{position:absolute;left:10px;width:15px;height:15px;opacity:.5;pointer-events:none}
+.search-hint{
+  position:absolute;top:calc(100% + 6px);right:0;width:260px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);
+  box-shadow:var(--shadow);padding:8px 12px;font-family:var(--font-ui);font-size:12.5px;
+  color:var(--ink-soft);display:none;
+}
+.search-hint.show{display:block}
+.menu-btn{
+  display:none;font-family:var(--font-ui);font-size:13px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:7px 11px;color:var(--green-deep);cursor:pointer;
+}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1200px 420px at 82% -10%,rgba(176,138,62,.16),transparent 60%),
+    linear-gradient(180deg,var(--paper-2),var(--paper));
+  border-bottom:1px solid var(--line);
+}
+.hero .wrap{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:40px;
+  align-items:center;padding:46px 20px 52px;
+}
+.hero-kicker{
+  font-family:var(--font-ui);font-size:12px;letter-spacing:.24em;
+  color:var(--red);margin-bottom:14px;text-transform:uppercase;
+}
+.hero h1{font-size:clamp(30px,4.2vw,50px);letter-spacing:.02em;color:var(--green-deep);margin-bottom:8px}
+.hero h1 span{color:var(--red)}
+.hero-lead{max-width:40em;color:var(--ink-soft);font-size:16.5px;margin-top:14px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{
+  display:inline-block;font-family:var(--font-ui);font-size:14px;
+  padding:10px 18px;border-radius:24px;border:1px solid var(--green);
+  color:var(--green-deep);background:transparent;transition:transform .15s ease,background .15s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-solid{background:var(--green);color:#f6f1e6;border-color:var(--green)}
+.btn-solid:hover{background:var(--green-deep)}
+.hero-stats{display:flex;gap:26px;margin-top:30px;flex-wrap:wrap}
+.hero-stats div{font-family:var(--font-ui)}
+.hero-stats b{display:block;font-family:var(--font-head);font-size:25px;color:var(--green-deep);line-height:1.2}
+.hero-stats small{font-size:12px;color:var(--ink-soft);letter-spacing:.05em}
+.hero-art{position:relative;justify-self:center;width:100%;max-width:400px}
+.hero-art svg{width:100%;height:auto;display:block}
+.hero-art .art-note{
+  position:absolute;right:0;bottom:-6px;font-family:var(--font-ui);
+  font-size:11px;color:var(--ink-soft);background:var(--card);
+  border:1px solid var(--line);border-radius:12px;padding:3px 10px;
+}
+
+/* ---------- 主内容布局 ---------- */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:34px;padding:38px 0 10px}
+.main-col{min-width:0}
+.side-col{position:relative}
+.side-sticky{position:sticky;top:calc(var(--anchor-offset) + 6px)}
+section.block{margin-bottom:46px}
+.block-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--green);padding-bottom:8px;margin-bottom:20px;flex-wrap:wrap}
+.block-head h2{font-size:21px;color:var(--green-deep);letter-spacing:.02em}
+.block-head .bh-note{font-family:var(--font-ui);font-size:12px;color:var(--ink-soft);margin-left:auto}
+.lead-p{font-size:16.5px;color:var(--ink-soft)}
+.meta-line{font-family:var(--font-ui);font-size:12px;color:var(--ink-soft);letter-spacing:.03em}
+
+/* 概览卡组 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
+.ov-card{
+  background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);
+  padding:16px 16px 14px;box-shadow:var(--shadow);
+}
+.ov-card h3{font-size:15.5px;margin-bottom:6px;color:var(--green-deep)}
+.ov-card p{font-size:14px;color:var(--ink-soft);margin:0}
+.ov-card .k{font-family:var(--font-ui);font-size:11.5px;color:var(--red);letter-spacing:.1em;display:block;margin-bottom:4px}
+
+/* 精选卡片 */
+.feat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+.feat-card{
+  background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  transition:transform .16s ease;
+}
+.feat-card:hover{transform:translateY(-3px)}
+.feat-card img{width:100%;height:132px;object-fit:cover}
+.feat-card .fc-body{padding:13px 15px 15px}
+.feat-card h3{font-size:16px;margin-bottom:5px}
+.feat-card p{font-size:13.5px;color:var(--ink-soft);margin:0 0 8px}
+.tagrow{display:flex;flex-wrap:wrap;gap:6px}
+.tag{
+  font-family:var(--font-ui);font-size:11.5px;color:var(--green-deep);
+  background:var(--paper-2);border:1px solid var(--line-soft);border-radius:12px;
+  padding:1.5px 9px;
+}
+.tag.red{color:#fff;background:var(--red);border-color:var(--red)}
+
+/* 更新列表 */
+.upd-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line-soft)}
+.upd-list li{
+  display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;
+  padding:11px 2px;border-bottom:1px dashed var(--line-soft);margin:0;
+}
+.upd-list time{font-family:var(--font-ui);font-size:12.5px;color:var(--red);padding-top:3px;letter-spacing:.02em}
+.upd-list b{font-weight:700;font-size:15px}
+.upd-list span{font-size:13.5px;color:var(--ink-soft);display:block}
+
+/* 分类索引 */
+.cat-index{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.cat-item{
+  display:block;background:var(--paper-2);border:1px solid var(--line-soft);
+  border-radius:var(--radius-sm);padding:9px 11px;font-family:var(--font-ui);font-size:13px;
+  color:var(--green-deep);transition:background .15s ease;
+}
+.cat-item:hover{background:var(--gold);color:#fff;text-decoration:none}
+.cat-item small{display:block;color:var(--ink-soft);font-size:11px;letter-spacing:.05em}
+.cat-item:hover small{color:#fff6e2}
+
+/* 深度解析 */
+.deep{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 26px 10px;box-shadow:var(--shadow);
+}
+.deep > p:first-child::first-letter{
+  float:left;font-size:3.1em;line-height:.9;padding:4px 8px 0 0;color:var(--red);font-weight:700;
+}
+.deep h3{font-size:17px;margin:22px 0 8px;color:var(--green-deep);border-left:4px solid var(--gold);padding-left:10px}
+.deep h3:first-of-type{margin-top:6px}
+.deep blockquote{
+  margin:16px 0;padding:12px 16px;background:var(--paper-2);
+  border-left:4px solid var(--green);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  font-size:15px;color:var(--ink-soft);
+}
+.deep blockquote p{margin:0}
+.deep table{width:100%;border-collapse:collapse;margin:12px 0 16px;font-size:14px}
+.deep th,.deep td{border:1px solid var(--line-soft);padding:7px 10px;text-align:left;vertical-align:top}
+.deep th{background:var(--paper-2);font-family:var(--font-ui);font-size:13px;color:var(--green-deep)}
+.deep td{color:var(--ink-soft)}
+.judge-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:10px 0 16px}
+.judge-card{background:var(--paper-2);border:1px solid var(--line-soft);border-radius:var(--radius-sm);padding:12px 14px}
+.judge-card b{display:block;font-family:var(--font-ui);font-size:12px;letter-spacing:.1em;color:var(--red);margin-bottom:4px}
+.judge-card p{font-size:14px;margin:0;color:var(--ink-soft)}
+
+/* 体验指南：编号步骤 */
+.steps{list-style:none;padding:0;margin:0;counter-reset:st;display:grid;gap:14px}
+.steps li{
+  counter-increment:st;position:relative;padding:14px 16px 14px 58px;margin:0;
+  background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);
+}
+.steps li::before{
+  content:counter(st,decimal-leading-zero);
+  position:absolute;left:16px;top:14px;
+  font-family:var(--font-ui);font-size:13px;font-weight:700;
+  color:#fff;background:var(--green);border-radius:50%;
+  width:26px;height:26px;display:grid;place-items:center;
+}
+.steps b{display:block;font-size:15px;margin-bottom:3px}
+.steps span{font-size:14px;color:var(--ink-soft)}
+
+/* FAQ */
+.faq details{
+  background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius-sm);
+  margin-bottom:9px;padding:0;overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;padding:12px 16px;font-size:15px;font-weight:700;color:var(--green-deep);
+  list-style:none;position:relative;padding-right:40px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:15px;top:50%;transform:translateY(-50%);
+  font-family:var(--font-ui);font-size:19px;color:var(--red);font-weight:400;
+}
+.faq details[open] summary::after{content:"–"}
+.faq .fa-body{padding:0 16px 14px;font-size:14.5px;color:var(--ink-soft);border-top:1px solid var(--line-soft);padding-top:11px}
+
+/* 评论 */
+.cmt-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+.cmt{
+  background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);
+  padding:14px 16px;font-size:14px;
+}
+.cmt-head{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-family:var(--font-ui)}
+.ava{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;flex:0 0 auto}
+.cmt-head b{font-size:13.5px;color:var(--green-deep)}
+.cmt-head time{margin-left:auto;font-size:11.5px;color:var(--ink-soft)}
+.cmt p{margin:0;color:var(--ink-soft)}
+.cmt .ref{font-family:var(--font-ui);font-size:11.5px;color:var(--red);display:block;margin-top:6px}
+
+/* 资讯双栏 */
+.news-split{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap)}
+.news-col h3,{font-size:15px}
+.news-item{padding:10px 0;border-bottom:1px dashed var(--line-soft);margin:0;display:block}
+.news-item b{display:block;font-size:14.5px;color:var(--ink)}
+.news-item span{font-size:13px;color:var(--ink-soft)}
+.news-item time{font-family:var(--font-ui);font-size:11.5px;color:var(--red);margin-right:6px}
+
+/* 标签推荐 */
+.reco-cloud{display:flex;flex-wrap:wrap;gap:9px}
+.reco-cloud a{
+  font-family:var(--font-ui);font-size:13px;border:1px solid var(--line);
+  border-radius:18px;padding:5px 13px;color:var(--green-deep);background:var(--card);
+  transition:background .15s ease,color .15s ease;
+}
+.reco-cloud a:hover{background:var(--green);color:#f6f1e6;text-decoration:none}
+.reco-cloud a em{font-style:normal;color:var(--red);font-size:11px;margin-left:4px}
+
+/* 榜单 */
+.rank-list{list-style:none;padding:0;margin:0;counter-reset:rk}
+.rank-list li{
+  counter-increment:rk;display:grid;grid-template-columns:34px minmax(0,1fr) auto;
+  gap:12px;align-items:center;padding:10px 12px;margin:0 0 7px;
+  background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius-sm);
+}
+.rank-list li::before{
+  content:counter(rk);font-family:var(--font-head);font-size:19px;
+  color:var(--gold);font-weight:700;text-align:center;
+}
+.rank-list li:nth-child(-n+3)::before{color:var(--red)}
+.rank-list b{font-size:14.5px}
+.rank-list small{display:block;font-size:12.5px;color:var(--ink-soft)}
+.rank-score{font-family:var(--font-ui);font-size:12.5px;color:var(--green-deep);background:var(--paper-2);border-radius:12px;padding:2px 9px;white-space:nowrap}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;border-left:2px solid var(--line);margin-left:6px}
+.timeline li{position:relative;padding:0 0 16px 20px;margin:0}
+.timeline li::before{
+  content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;
+  border-radius:50%;background:var(--paper);border:3px solid var(--green);
+}
+.timeline time{font-family:var(--font-ui);font-size:12px;color:var(--red);letter-spacing:.04em}
+.timeline b{display:block;font-size:14.5px;margin-top:1px}
+.timeline span{font-size:13px;color:var(--ink-soft)}
+
+/* 侧栏 */
+.side-card{
+  background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius);
+  padding:15px 16px;margin-bottom:18px;box-shadow:var(--shadow);
+}
+.side-card h2{font-size:14.5px;letter-spacing:.04em;color:var(--green-deep);margin-bottom:10px;font-family:var(--font-ui)}
+.side-nav{list-style:none;padding:0;margin:0}
+.side-nav li{margin:0}
+.side-nav a{
+  display:block;font-family:var(--font-ui);font-size:13.5px;color:var(--ink-soft);
+  padding:5px 8px;border-left:3px solid transparent;border-radius:0 4px 4px 0;
+}
+.side-nav a:hover{background:var(--paper-2);color:var(--green-deep);text-decoration:none}
+.side-nav a.active{border-left-color:var(--red);color:var(--green-deep);font-weight:700;background:var(--paper-2)}
+.side-facts{list-style:none;padding:0;margin:0;font-family:var(--font-ui);font-size:12.5px}
+.side-facts li{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px dashed var(--line-soft);margin:0;color:var(--ink-soft)}
+.side-facts li:last-child{border-bottom:0}
+.side-facts b{color:var(--green-deep)}
+.quote-card{
+  background:var(--green-deep);color:#f0e8d6;border-radius:var(--radius);padding:16px 17px;margin-bottom:18px;
+}
+.quote-card p{font-size:14px;margin:0 0 8px;color:#e8dcc2}
+.quote-card cite{font-family:var(--font-ui);font-size:11.5px;font-style:normal;color:#a9bdb0;letter-spacing:.05em}
+
+/* 页尾 */
+.site-foot{
+  background:var(--green-deep);color:#ddd2bb;margin-top:30px;
+  font-family:var(--font-ui);font-size:13.5px;
+}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;padding:36px 20px 26px;max-width:1180px;margin:0 auto}
+.foot-brand .brand-text{color:#f2ead8;font-size:20px}
+.foot-brand p{margin:10px 0 0;font-size:13px;color:#b7c4b9;line-height:1.7;max-width:24em}
+.foot-col h3{font-size:13px;color:#e9dfc8;letter-spacing:.12em;margin-bottom:9px;font-weight:700}
+.foot-col ul{list-style:none;padding:0;margin:0}
+.foot-col li{margin:0 0 6px}
+.foot-col a{color:#b7c4b9;font-size:13px}
+.foot-col a:hover{color:#ffd9a8}
+.foot-note{
+  border-top:1px solid #3b5348;padding:14px 20px;max-width:1180px;margin:0 auto;
+  display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between;
+  font-size:12px;color:#93a597;
+}
+.foot-note p{margin:0}
+
+/* 回顶 */
+#toTop{
+  position:fixed;right:18px;bottom:18px;z-index:70;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+  background:var(--card);color:var(--green-deep);cursor:pointer;
+  box-shadow:var(--shadow);display:none;place-items:center;
+  font-family:var(--font-ui);font-size:12px;
+}
+#toTop.show{display:grid}
+#toTop:hover{transform:translateY(-2px)}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1000px){
+  :root{--anchor-offset:100px}
+  .layout{grid-template-columns:1fr;gap:0}
+  .side-col{order:2}
+  .main-col{order:1}
+  .side-sticky{position:static}
+  .hero .wrap{grid-template-columns:1fr;gap:26px;padding:34px 20px 40px}
+  .hero-art{max-width:320px;order:2}
+  .overview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-index{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  :root{--fs-body:16px;--anchor-offset:96px;--gap:14px}
+  .announce .wrap{padding:6px 14px;gap:8px}
+  .announce .ameta{display:none}
+  .announce p{font-size:12px}
+  .head-row{padding:9px 14px;gap:10px;flex-wrap:wrap}
+  .menu-btn{display:inline-block;order:3;margin-left:auto}
+  .searchbox{margin-left:auto;order:2}
+  .searchbox input{width:0;padding:7px 10px 7px 10px;border-color:transparent;background:transparent;cursor:pointer;transition:width .18s ease,padding .18s ease}
+  .searchbox.open input{width:150px;padding-left:30px;border-color:var(--line);background:var(--card);cursor:text}
+  .searchbox svg{left:8px}
+  .head-nav{
+    order:4;width:100%;display:none;flex-direction:column;gap:0;
+    border-top:1px solid var(--line);padding:6px 0 4px;margin:0;
+  }
+  .head-nav.open{display:flex}
+  .head-nav a{padding:9px 6px;font-size:14px;border-bottom:1px dashed var(--line-soft)}
+  .hero h1{font-size:clamp(26px,8vw,36px)}
+  .hero-stats{gap:18px}
+  .hero-stats b{font-size:21px}
+  .overview-grid,.feat-grid,.cmt-grid,.news-split{grid-template-columns:1fr}
+  .cat-index{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .upd-list li{grid-template-columns:1fr;gap:2px}
+  .upd-list time{padding-top:0}
+  .deep{padding:18px 16px 6px}
+  .judge-grid{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr;gap:20px;padding:26px 14px 18px}
+  #toTop{right:12px;bottom:12px}
+  .wrap{padding:0 14px}
+}
+@media (max-width:380px){
+  .cat-index{grid-template-columns:1fr}
+  .hero-actions .btn{width:100%;text-align:center}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce" role="region" aria-label="站点更新公告">
+  <div class="wrap">
+    <span class="tag">更新</span>
+    <p>11 月 6 日上线“鸠摩智台词版本对照表 v2”，补入 1982 版与 2013 版两处台词分歧，<a href="/#compare">查看对照</a>。</p>
+    <span class="ameta">站点最后核对 2026-11-08</span>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-head">
+  <div class="head-row">
+    <a class="brand" href="/#top" aria-label="杏吧鸠摩智 首页">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <rect width="64" height="64" rx="14" fill="#2f4a3e"/>
+        <path d="M13 45 Q21 17 32 15 Q43 17 51 45 Q41 38 32 45 Q23 38 13 45Z" fill="#e8d9b5"/>
+        <circle cx="32" cy="27" r="4.2" fill="#b5462d"/>
+        <path d="M20 49h24" stroke="#b08a3e" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <span>
+        <span class="brand-text">杏吧鸠摩智</span>
+        <span class="brand-sub">TEXT &amp; LORE</span>
+      </span>
+    </a>
+    <nav class="head-nav" id="headNav" aria-label="主题导航">
+      <a href="/#overview">人物概览</a>
+      <a href="/#featured">精选荐读</a>
+      <a href="/#updates">更新流水</a>
+      <a href="/#categories">分类索引</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">问答</a>
+      <a href="/#rank">榜单</a>
+    </nav>
+    <div class="searchbox" id="searchBox">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#4d463c" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <label class="sr-only" for="siteSearch">站内查找条目</label>
+      <input id="siteSearch" type="search" placeholder="查条目 / 台词 / 版本" autocomplete="off">
+      <div class="search-hint" id="searchHint" role="status" aria-live="polite"></div>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="headNav">导航</button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <div>
+        <div class="hero-kicker">金庸角色 · 二创资料库</div>
+        <h1 id="heroTitle">杏吧<span>鸠摩智</span></h1>
+        <p class="hero-lead">围绕《天龙八部》里那位吐蕃国师，把散落的原著章回、历代剧集台词、同人创作与读者争论收拢成可检索的条目。每一条说法都注明出自哪一版、第几回、谁转述。</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="/#deep">读深度解析</a>
+          <a class="btn" href="/#compare">看版本对照</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>74</b><small>考据条目</small></div>
+          <div><b>6</b><small>影视版本</small></div>
+          <div><b>31</b><small>同人索引</small></div>
+          <div><b>128</b><small>条读者讨论</small></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 340" role="img">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2f4a3e"/><stop offset="1" stop-color="#22382e"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#e8d9b5"/><stop offset="1" stop-color="#c9b383"/>
+            </linearGradient>
+          </defs>
+          <rect x="10" y="14" width="380" height="312" rx="18" fill="#efe7d6" stroke="#d9cdb4"/>
+          <circle cx="316" cy="76" r="34" fill="#b5462d" opacity=".82"/>
+          <circle cx="316" cy="76" r="52" fill="none" stroke="#b5462d" stroke-width="1.2" opacity=".4"/>
+          <path d="M86 250 Q110 128 172 96 Q234 128 258 250 Q214 218 172 250 Q130 218 86 250Z" fill="url(#g2)"/>
+          <path d="M172 96 L172 250" stroke="#b08a3e" stroke-width="1.6" opacity=".55"/>
+          <circle cx="172" cy="150" r="11" fill="#2f4a3e"/>
+          <circle cx="172" cy="150" r="22" fill="none" stroke="#2f4a3e" stroke-width="1.4" opacity=".5"/>
+          <path d="M120 262h104" stroke="#2f4a3e" stroke-width="3" stroke-linecap="round"/>
+          <path d="M296 216 q16 -30 34 -34" stroke="#2f4a3e" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <text x="46" y="300" font-family="Georgia,serif" font-size="15" fill="#4d463c" letter-spacing="4">火焰刀 · 小无相功</text>
+          <rect x="266" y="252" width="106" height="40" rx="8" fill="#2f4a3e"/>
+          <text x="284" y="278" font-family="Georgia,serif" font-size="14" fill="#efe7d6" letter-spacing="2">吐蕃国师</text>
+        </svg>
+        <span class="art-note">人物标识 · 原创绘制</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <div class="main-col">
+
+      <!-- 1 领域概览 -->
+      <section class="block" id="overview" aria-labelledby="h-overview">
+        <div class="block-head">
+          <h2 id="h-overview">人物概览：从吐蕃国师到武学偏执者</h2>
+          <span class="bh-note">领域速览 · 3 个切入面</span>
+        </div>
+        <p class="lead-p">鸠摩智在《天龙八部》里的登场时间集中在第十四回至第四十六回，身份是吐蕃大雪山大轮寺护法国师。他的行为线可拆成三条：一是为大轮寺夺经，二是以火焰刀、小无相功换取武学声望，三是对段誉、虚竹的持续追逐。读者对他的兴趣，多数落在“武功从哪来”和“他到底算不算反派”两个点上。</p>
+        <div class="overview-grid">
+          <article class="ov-card">
+            <span class="k">身份</span>
+            <h3>吐蕃国师与大轮寺</h3>
+            <p>原著称其“吐蕃国师鸠摩智”，常驻大雪山大轮寺。寺产、僧侣编制、与吐蕃王室的关系，书中只侧面提到，二创多从“护法国师”四字延伸。</p>
+          </article>
+          <article class="ov-card">
+            <span class="k">武学</span>
+            <h3>火焰刀与少林七十二绝技</h3>
+            <p>火焰刀为密宗内功外放的路数，与中原掌法不同。他在少林寺以“少林绝技”演武一场，是全书对武学来源质疑最集中的段落。</p>
+          </article>
+          <article class="ov-card">
+            <span class="k">结局</span>
+            <h3>枯井底下的功力散尽</h3>
+            <p>第四十六回，鸠摩智在枯井中被段誉吸走内力，武功尽失后自陈“佛门弟子”，转向讲经。这段转折是读者争议最集中的一处。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="block" id="featured" aria-labelledby="h-featured">
+        <div class="block-head">
+          <h2 id="h-featured">精选内容推荐</h2>
+          <span class="bh-note">本周编辑挑选 · 4 篇</span>
+        </div>
+        <div class="feat-grid">
+          <article class="feat-card">
+            <img src="https://picsum.photos/seed/jiumozhi-fire/640/280" width="640" height="280" loading="lazy" alt="暗色背景中的火焰刀招式示意插画" style="object-fit:cover">
+            <div class="fc-body">
+              <h3>火焰刀到底是不是“刀法”</h3>
+              <p>从原著四十三回的用词看，火焰刀靠掌缘送劲，与兵刃无关。对照六版影视处理，谈三种改编取向的得失。</p>
+              <div class="tagrow"><span class="tag red">解析</span><span class="tag">火焰刀</span><span class="tag">武学考证</span></div>
+            </div>
+          </article>
+          <article class="feat-card">
+            <img src="https://picsum.photos/seed/jiumozhi-temple/640/280" width="640" height="280" loading="lazy" alt="雪山寺院的远景插画轮廓" style="object-fit:cover">
+            <div class="fc-body">
+              <h3>大轮寺在吐蕃的设定来源</h3>
+              <p>书中未写具体方位，二创常见的“大雪山东麓”是后人补的。梳理七处原文描写与三处改编差异。</p>
+              <div class="tagrow"><span class="tag red">考据</span><span class="tag">大轮寺</span><span class="tag">地理设定</span></div>
+            </div>
+          </article>
+          <article class="feat-card">
+            <img src="https://picsum.photos/seed/jiumozhi-shaolin/640/280" width="640" height="280" loading="lazy" alt="少林寺山门的木刻风格插画" style="object-fit:cover">
+            <div class="fc-body">
+              <h3>少林演武一场的台词对照</h3>
+              <p>把 1982、1997、2003、2013 四版的“小无相功”自陈段落并列，标出各自删改的句子与动机。</p>
+              <div class="tagrow"><span class="tag red">对照</span><span class="tag">小无相功</span><span class="tag">少林寺</span></div>
+            </div>
+          </article>
+          <article class="feat-card">
+            <img src="https://picsum.photos/seed/jiumozhi-well/640/280" width="640" height="280" loading="lazy" alt="枯井与石阶的夜色插画" style="object-fit:cover">
+            <div class="fc-body">
+              <h3>枯井结局的三派读法</h3>
+              <p>“顿悟说”“功力被夺说”“作者收束说”各有什么原文依据，又各自绕开了哪一句。</p>
+              <div class="tagrow"><span class="tag red">观点</span><span class="tag">枯井</span><span class="tag">结局争议</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="block" id="updates" aria-labelledby="h-updates">
+        <div class="block-head">
+          <h2 id="h-updates">最新更新</h2>
+          <span class="bh-note">2026-10-10 至 11-08</span>
+        </div>
+        <ul class="upd-list">
+          <li>
+            <time datetime="2026-11-06">11 月 6 日</time>
+            <div><b>台词版本对照表升级到 v2</b><span>补入 1982 版第 22 集与 2013 版第 31 集两处分歧，标注每句台词的出处集数。</span></div>
+          </li>
+          <li>
+            <time datetime="2026-11-03">11 月 3 日</time>
+            <div><b>“小无相功来源”条目改写</b><span>把原先笼统的“逍遥派”说法，拆成小说原文与影视补写两类，共 5 条可核对证据。</span></div>
+          </li>
+          <li>
+            <time datetime="2026-10-29">10 月 29 日</time>
+            <div><b>新增同人索引 6 篇</b><span>主题集中在鸠摩智与段誉的对手戏，均已标注篇幅、完结状态与设定前提。</span></div>
+          </li>
+          <li>
+            <time datetime="2026-10-22">10 月 22 日</time>
+            <div><b>读者讨论区整理第 4 期</b><span>收录 41 条评论，按“人物评价”“武学考据”“改编比较”三类归档。</span></div>
+          </li>
+          <li>
+            <time datetime="2026-10-14">10 月 14 日</time>
+            <div><b>补入吐蕃僧侣称谓说明</b><span>解释“国师”“护法国师”“上师”在书中的混用现象，附原文三处例证。</span></div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="block" id="categories" aria-labelledby="h-categories">
+        <div class="block-head">
+          <h2 id="h-categories">分类索引</h2>
+          <span class="bh-note">10 个常搜类目</span>
+        </div>
+        <div class="cat-index">
+          <a class="cat-item" href="/#deep">火焰刀招式拆解<small>12 条</small></a>
+          <a class="cat-item" href="/#compare">小无相功版本差异<small>9 条</small></a>
+          <a class="cat-item" href="/#deep">少林寺演武原文<small>6 条</small></a>
+          <a class="cat-item" href="/#faq">鸠摩智武功尽失<small>8 条</small></a>
+          <a class="cat-item" href="/#featured">大轮寺设定考<small>7 条</small></a>
+          <a class="cat-item" href="/#guide">吐蕃国师称谓<small>4 条</small></a>
+          <a class="cat-item" href="/#comments">段誉对手戏<small>11 条</small></a>
+          <a class="cat-item" href="/#featured">虚竹与鸠摩智<small>5 条</small></a>
+          <a class="cat-item" href="/#rank">影视版本口碑<small>6 条</small></a>
+          <a class="cat-item" href="/#reco">同人作品索引<small>31 条</small></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="block" id="deep" aria-labelledby="h-deep">
+        <div class="block-head">
+          <h2 id="h-deep">深度解析：鸠摩智的“反派”身份是被读者算出来的</h2>
+          <span class="bh-note">唯一主体阅读区 · 约 1100 字</span>
+        </div>
+        <div class="deep">
+          <p>把鸠摩智归入“反派”，在多数读者那里是默认结论。但如果把全书里他的行为逐条摊开，会发现这个结论并非来自某次恶行，而是来自读者对“目的—手段”的持续加权。以下拆成四块可核对的内容，结论放在最后。</p>
+
+          <h3>一、出场时序：他先做了三件不构成伤害的事</h3>
+          <p>第十四回，鸠摩智初到姑苏，身份是吐蕃国师，来意是“赴大理求取六脉神剑经”。他先递帖、再登门、后动武，顺序与中原江湖的礼数一致。第二十三回在少林寺，他上香、拜佛、与玄慈方丈对答，全程未伤一人，被挑衅后才出手。第四十回天龙寺一役，他确实打伤本因、本相等僧，但书中定性是“以武求经”，并非屠杀。</p>
+          <p>这三段在读者讨论里出现频率极低，原因很直白：没有伤亡，就没有记忆点。可对照的数据是，全书里鸠摩智主动出手的次数是 11 次，其中 7 次发生在被围攻或被拒绝之后。</p>
+
+          <h3>二、少林演武：真正让他“成为反派”的不是武功，是自陈</h3>
+          <p>第四十三回，他在少林寺以“少林七十二绝技”逐一演武，虚竹看出门道，指出他用的是小无相功。小说原文里鸠摩智的回应是承认兼修，但强调“武功无正邪，在人用之”。这句话常被截半引用。完整版本里，他紧接着说的是“我取经为弘法，非为私斗”。</p>
+          <p>1997 版剧集把这段处理成当众羞辱少林，台词改为“少林绝技不过如此”，播出后观众评价明显转向负面。2013 版删掉了羞辱句，改为默然退场，同期论坛讨论里“反派”比例从 78% 降到 54%（按当年剧评区的关键词统计口径，样本 620 条）。同一件事，两种台词处理，读者判断差了 24 个百分点。</p>
+
+          <h3>三、枯井结局：三种读法各自漏掉了什么</h3>
+          <div class="judge-grid">
+            <div class="judge-card">
+              <b>顿悟说</b>
+              <p>依据是第四十六回他自陈“我一生痴迷武学，今日方知”。漏洞：这句之后他还问段誉“我的内力何在”，说明散功并非主动。</p>
+            </div>
+            <div class="judge-card">
+              <b>功力被夺说</b>
+              <p>依据是段誉北冥神功吸走真气。漏洞：原文只写“内力尽失”，未写“被吸”，吸功过程在段誉一侧描写，鸠摩智的视角是空白。</p>
+            </div>
+            <div class="judge-card">
+              <b>作者收束说</b>
+              <p>依据是全书临近结尾、多条支线同时收口。漏洞：这一说法无法被原文证伪，属于叙事层面的推测，不能当作情节事实。</p>
+            </div>
+            <div class="judge-card">
+              <b>可核对项</b>
+              <p>三种读法都能在第四十六回找到支撑句，但没有任何一句能同时排除另外两种。所以争论的核心不是事实，而是取舍权重。</p>
+            </div>
+          </div>
+
+          <h3>四、把判断拆成可核对的结构</h3>
+          <table>
+            <caption class="sr-only">鸠摩智行为与读者评价核对表</caption>
+            <thead><tr><th scope="col">核对项</th><th scope="col">原文依据</th><th scope="col">影视改动</th><th scope="col">影响</th></tr></thead>
+            <tbody>
+              <tr><td>求经目的</td><td>第十四回，帖文称“为吐蕃弘法”</td><td>多版弱化弘法，强调私欲</td><td>动机变薄</td></tr>
+              <tr><td>火焰刀性质</td><td>掌缘送劲，无兵刃</td><td>部分版本配刀光特效</td><td>武学观感偏移</td></tr>
+              <tr><td>少林自陈</td><td>承认兼修，强调用法</td><td>1997 版改为羞辱句</td><td>反派感上升</td></tr>
+              <tr><td>结局处理</td><td>内力尽失，转讲经</td><td>2003 版补“跪拜”动作</td><td>顿悟感被放大</td></tr>
+            </tbody>
+          </table>
+          <blockquote><p>判断：鸠摩智不是被写坏的，而是在“目的正当、手段越界、结尾收束”三段结构里被读者按权重投出来的反派。要反驳这条，只需找出一次他在未被挑衅时主动伤及无辜的原文，目前公开讨论里尚未见到。</p></blockquote>
+        </div>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="block" id="guide" aria-labelledby="h-guide">
+        <div class="block-head">
+          <h2 id="h-guide">体验指南：怎么系统读一个人物</h2>
+          <span class="bh-note">5 步 · 按顺序做</span>
+        </div>
+        <ol class="steps">
+          <li><b>先锁定章回范围</b><span>鸠摩智的完整行为线在第十四回到第四十六回之间，跨 33 回。先读这一区间，再回看其他回目的零星提及，避免被片段带偏。</span></li>
+          <li><b>把武功与身份分开记</b><span>火焰刀属路数，小无相功属兼修，七十二绝技属演武展示。三者来源不同，混在一起谈就分不清哪些是原著设定、哪些是改编补写。</span></li>
+          <li><b>找一句能定性的原话</b><span>第四十三回“武功无正邪，在人用之”是目前被引用最多的一句。读完整段再下结论，因为后半句常被省略。</span></li>
+          <li><b>对照至少两个影视版本</b><span>1997 版与 2013 版在少林段落的处理方向相反，并排看能直观感受到台词改动对人物评价的影响。</span></li>
+          <li><b>最后看同人，不看改编</b><span>同人作品会放大某些设定，读之前先确认它的前提（是否承认枯井散功、是否保留吐蕃身份），否则容易把二创当成原著。</span></li>
+        </ol>
+      </section>
+
+      <!-- 7 版本对照（补充板块：对照面板） -->
+      <section class="block" id="compare" aria-labelledby="h-compare">
+        <div class="block-head">
+          <h2 id="h-compare">版本对照面板：六版鸠摩智的一句话登场</h2>
+          <span class="bh-note">按首播年份排列</span>
+        </div>
+        <div class="news-split">
+          <div class="news-col">
+            <h3>1982 版 · 香港无线</h3>
+            <p style="font-size:14px;color:var(--ink-soft)">登场以合十问讯为主，台词偏文言，保留“贫僧自吐蕃来”的完整自报家门。武打设计多用掌风与衣袖。</p>
+            <h3>1997 版 · 香港无线</h3>
+            <p style="font-size:14px;color:var(--ink-soft)">加入大量傲气台词，“少林绝技不过如此”即出自此版。人物情绪外放，反派定位最清晰。</p>
+            <h3>2003 版 · 内地</h3>
+            <p style="font-size:14px;color:var(--ink-soft)">造型偏华丽，火焰刀加入火焰特效。结尾补了跪拜动作，顿悟感被放大，争议也集中在此。</p>
+          </div>
+          <div class="news-col">
+            <h3>2013 版 · 内地</h3>
+            <p style="font-size:14px;color:var(--ink-soft)">删去羞辱台词，少林段落改为默然退场。同期讨论中“反派”比例下降明显，是台词影响评价的直接样本。</p>
+            <h3>2021 版 · 内地</h3>
+            <p style="font-size:14px;color:var(--ink-soft)">登场节奏加快，求经动机只用一句旁白交代，导致新观众对“为何执着六脉神剑”的理解断层。</p>
+            <h3>2024 版 · 网络剧</h3>
+            <p style="font-size:14px;color:var(--ink-soft)">保留吐蕃身份设定，但把小无相功来源处理成口述回忆，未展开，原著党评价分歧较大。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8 FAQ -->
+      <section class="block faq" id="faq" aria-labelledby="h-faq">
+        <div class="block-head">
+          <h2 id="h-faq">常见问题</h2>
+          <span class="bh-note">6 问 · 点击展开</span>
+        </div>
+        <details>
+          <summary>鸠摩智的火焰刀到底是什么路数？</summary>
+          <div class="fa-body">原著写火焰刀时强调“掌缘送劲、虚虚实实”，与持刀劈砍无关，属于内力外放的掌法变体。影视版本为视觉考虑常加刀光，容易让人误以为是兵刃功夫。区分方法很简单：看他手上有没有持物。</div>
+        </details>
+        <details>
+          <summary>小无相功是鸠摩智自己练成的吗？</summary>
+          <div class="fa-body">小说里他承认兼修小无相功，但未交代完整来历，只在与虚竹对答中露出破绽。逍遥派一系的功法如何流入吐蕃，书中留白。多数“他从逍遥派偷学”的说法来自改编补写，不属于原著明写内容。</div>
+        </details>
+        <details>
+          <summary>枯井之后他的武功真的全没了？</summary>
+          <div class="fa-body">第四十六回写“内力尽失”，此后他转为讲经，未再出手。是否“全无”取决于对“内力”与“招式记忆”的区分：招式记忆书中未写消失，只是没有再用的场景。</div>
+        </details>
+        <details>
+          <summary>为什么不同版本的鸠摩智性格差别这么大？</summary>
+          <div class="fa-body">差别主要来自台词取舍。1997 版放大傲气，2013 版删去羞辱句，性格就柔和许多。原著里他兼有礼数与执念，改编通常只强化其中一面，观众记住的往往是强化后的那面。</div>
+        </details>
+        <details>
+          <summary>大轮寺在书中有具体位置吗？</summary>
+          <div class="fa-body">没有。书中只称“大雪山大轮寺”，方位、规模、僧侣数量都未展开。二创常见的“东麓”“山腰”属于补充设定，引用时应标明是推断而非原文。</div>
+        </details>
+        <details>
+          <summary>读同人前需要先看原著吗？</summary>
+          <div class="fa-body">建议先看第十四回至第四十六回，尤其是少林演武与枯井两段。同人作品常默认读者已知这两处，若跳过，容易把二创设定误当作原文情节。</div>
+        </details>
+      </section>
+
+      <!-- 9 用户评论 -->
+      <section class="block" id="comments" aria-labelledby="h-comments">
+        <div class="block-head">
+          <h2 id="h-comments">读者评论</h2>
+          <span class="bh-note">近期 41 条中的 6 条</span>
+        </div>
+        <div class="cmt-grid">
+          <article class="cmt">
+            <div class="cmt-head"><span class="ava" style="background:#2f4a3e">木</span><b>木野狐</b><time datetime="2026-11-07">11 月 7 日</time></div>
+            <p>看完火焰刀那篇才反应过来，小时候看的版本一直有刀光，难怪我记了二十年“鸠摩智用刀”。</p>
+            <span class="ref">指向：火焰刀招式拆解</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head"><span class="ava" style="background:#b5462d">南</span><b>南窗听雪</b><time datetime="2026-11-05">11 月 5 日</time></div>
+            <p>少林那段台词对照表做得细，但 1997 版那句“不过如此”我记得后面还有半句，建议补全再统计。</p>
+            <span class="ref">指向：台词版本对照表 v2</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head"><span class="ava" style="background:#b08a3e">半</span><b>半盏茶</b><time datetime="2026-11-02">11 月 2 日</time></div>
+            <p>枯井三派读法那段，我倾向第二种。原文里段誉视角写得很清楚，鸠摩智那边是空白，不代表没发生。</p>
+            <span class="ref">指向：枯井结局的三派读法</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head"><span class="ava" style="background:#4d6b5a">旧</span><b>旧书摊主</b><time datetime="2026-10-30">10 月 30 日</time></div>
+            <p>大轮寺位置那篇说实话有点短，七处原文描写列出来只占半屏，不如把三处改编差异展开讲。</p>
+            <span class="ref">指向：大轮寺在吐蕃的设定来源</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head"><span class="ava" style="background:#7a5c8a">阿</span><b>阿箬</b><time datetime="2026-10-26">10 月 26 日</time></div>
+            <p>同人索引挺好用，前提标注清楚。上次读到一篇默认枯井没散功的，差点被绕进去。</p>
+            <span class="ref">指向：同人作品索引</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head"><span class="ava" style="background:#3f5a6b">单</span><b>单刀赴会</b><time datetime="2026-10-19">10 月 19 日</time></div>
+            <p>“反派是被读者算出来的”这个说法有点强行，但那个 24 个百分点的对比确实有说服力。</p>
+            <span class="ref">指向：深度解析正文</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关资讯 -->
+      <section class="block" id="news" aria-labelledby="h-news">
+        <div class="block-head">
+          <h2 id="h-news">相关资讯</h2>
+          <span class="bh-note">近 30 天</span>
+        </div>
+        <div class="news-split">
+          <div class="news-col">
+            <a class="news-item" href="/#compare"><b>六版鸠摩智台词库完成第二轮校准</b><span><time datetime="2026-11-04">11-04</time>1982 版与 2013 版的集数对应关系已逐条核对，误差 0 条。</span></a>
+            <a class="news-item" href="/#deep"><b>少林演武段落新增原文引证 14 处</b><span><time datetime="2026-10-31">10-31</time>全部标注回目与段落位置，便于复核。</span></a>
+            <a class="news-item" href="/#guide"><b>人物阅读路径指南上线</b><span><time datetime="2026-10-24">10-24</time>按章回顺序给出 5 个阅读节点。</span></a>
+          </div>
+          <div class="news-col">
+            <a class="news-item" href="/#rank"><b>影视版本口碑榜更新第 3 期</b><span><time datetime="2026-10-20">10-20</time>样本扩至 1200 条剧评，新增 2024 版。</span></a>
+            <a class="news-item" href="/#comments"><b>读者讨论第 4 期归档</b><span><time datetime="2026-10-18">10-18</time>41 条评论按三类整理，含 7 条反驳意见。</span></a>
+            <a class="news-item" href="/#reco"><b>同人索引新增 6 篇</b><span><time datetime="2026-10-12">10-12</time>均已标注篇幅、完结状态与设定前提。</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11 相关推荐 -->
+      <section class="block" id="reco" aria-labelledby="h-reco">
+        <div class="block-head">
+          <h2 id="h-reco">相关推荐</h2>
+          <span class="bh-note">按搜索热度</span>
+        </div>
+        <div class="reco-cloud">
+          <a href="/#deep">火焰刀原文描写<em>热</em></a>
+          <a href="/#compare">小无相功来历对照</a>
+          <a href="/#faq">鸠摩智为什么不会六脉神剑</a>
+          <a href="/#deep">少林七十二绝技演武</a>
+          <a href="/#comments">段誉与鸠摩智对手戏<em>热</em></a>
+          <a href="/#featured">大轮寺设定考</a>
+          <a href="/#deep">枯井散功原文</a>
+          <a href="/#guide">吐蕃国师称谓解释</a>
+          <a href="/#rank">1982 版鸠摩智评价</a>
+          <a href="/#featured">虚竹识破小无相功</a>
+          <a href="/#news">六版台词库校准</a>
+          <a href="/#comments">同人写作前提标注</a>
+        </div>
+      </section>
+
+      <!-- 12 榜单（补充板块） -->
+      <section class="block" id="rank" aria-labelledby="h-rank">
+        <div class="block-head">
+          <h2 id="h-rank">影视版本口碑榜</h2>
+          <span class="bh-note">样本 1200 条剧评 · 2026-10-20 更新</span>
+        </div>
+        <ol class="rank-list">
+          <li><div><b>1997 版 · 香港无线</b><small>台词外放，反派定位清晰，讨论量最大</small></div><span class="rank-score">综合 8.6</span></li>
+          <li><div><b>2003 版 · 内地</b><small>造型与特效争议大，结尾补笔被频繁引用</small></div><span class="rank-score">综合 8.1</span></li>
+          <li><div><b>1982 版 · 香港无线</b><small>文言台词保留最多，武打设计偏写意</small></div><span class="rank-score">综合 7.9</span></li>
+          <li><div><b>2013 版 · 内地</b><small>删去羞辱句，人物柔和，原著党分歧明显</small></div><span class="rank-score">综合 7.2</span></li>
+          <li><div><b>2021 版 · 内地</b><small>动机交代偏少，新观众理解门槛高</small></div><span class="rank-score">综合 6.8</span></li>
+          <li><div><b>2024 版 · 网络剧</b><small>设定保留但展开不足，讨论集中在小无相功</small></div><span class="rank-score">综合 6.3</span></li>
+        </ol>
+      </section>
+
+      <!-- 13 时间线（补充板块） -->
+      <section class="block" id="timeline" aria-labelledby="h-timeline">
+        <div class="block-head">
+          <h2 id="h-timeline">原著内时间线：鸠摩智出现的 33 回</h2>
+          <span class="bh-note">按回目顺序</span>
+        </div>
+        <ul class="timeline">
+          <li><time>第十四回</time><b>姑苏登场</b><span>以吐蕃国师身份递帖，求取六脉神剑经，未动武。</span></li>
+          <li><time>第二十三回</time><b>少林上香</b><span>拜佛对答，被挑衅后出手，全程未伤及性命。</span></li>
+          <li><time>第四十回</time><b>天龙寺一役</b><span>打伤本因、本相等僧，以武求经，书中定性为“求”非“屠”。</span></li>
+          <li><time>第四十三回</time><b>少林演武</b><span>逐一演示七十二绝技，虚竹识破小无相功，自陈“武功无正邪”。</span></li>
+          <li><time>第四十六回</time><b>枯井散功</b><span>内力尽失，转向讲经，全书对其武功线的收束点。</span></li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side-col" aria-label="侧边导航与速览">
+      <div class="side-sticky">
+        <div class="side-card">
+          <h2>栏目导航</h2>
+          <ul class="side-nav" id="sideNav">
+            <li><a href="/#overview">人物概览</a></li>
+            <li><a href="/#featured">精选内容推荐</a></li>
+            <li><a href="/#updates">最新更新</a></li>
+            <li><a href="/#categories">分类索引</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#compare">版本对照面板</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#comments">读者评论</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#reco">相关推荐</a></li>
+            <li><a href="/#rank">影视版本口碑榜</a></li>
+            <li><a href="/#timeline">原著内时间线</a></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h2>条目速览</h2>
+          <ul class="side-facts">
+            <li><span>首次登场</span><b>第十四回</b></li>
+            <li><span>行为线跨度</span><b>33 回</b></li>
+            <li><span>主动出手</span><b>11 次</b></li>
+            <li><span>影视版本</span><b>6 版</b></li>
+            <li><span>台词对照</span><b>已核 42 句</b></li>
+            <li><span>最近核对</span><b>2026-11-08</b></li>
+          </ul>
+        </div>
+        <div class="quote-card">
+          <p>“武功无正邪，在人用之。我取经为弘法，非为私斗。”</p>
+          <cite>—— 第四十三回，少林演武段</cite>
+        </div>
+        <div class="side-card">
+          <h2>参与讨论</h2>
+          <p style="font-size:13.5px;color:var(--ink-soft);margin:0 0 10px">发现原文引用有误、集数对应不上，或想补一条同人索引，可在评论区留言。</p>
+          <a class="btn" href="/#comments" style="font-size:13px;padding:7px 14px">去读者评论</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- 页尾 -->
+<footer class="site-foot">
+  <div class="foot-top">
+    <div class="foot-brand">
+      <span class="brand-text">杏吧鸠摩智</span>
+      <p>把一位虚构僧人的原文、台词与争论，按可核对的方式归档。</p>
+    </div>
+    <div class="foot-col">
+      <h3>内容栏目</h3>
+      <ul>
+        <li><a href="/#overview">人物概览</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#compare">版本对照面板</a></li>
+        <li><a href="/#timeline">原著内时间线</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h3>检索入口</h3>
+      <ul>
+        <li><a href="/#categories">分类索引</a></li>
+        <li><a href="/#reco">相关推荐</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#rank">影视版本口碑榜</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h3>互动</h3>
+      <ul>
+        <li><a href="/#comments">读者评论</a></li>
+        <li><a href="/#updates">最新更新</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-note">
+    <p>条目为示例数据，原文引用标注回目，影视台词标注集数。页脚更新时间 2026-11-08，对应正文“台词版本对照表 v2”与“小无相功来源条目改写”两项。</p>
+    <p>© 2026 杏吧鸠摩智 · 内容整理</p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部" type="button">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var headNav=document.getElementById('headNav');
+  var searchBox=document.getElementById('searchBox');
+  var searchInput=document.getElementById('siteSearch');
+  var searchHint=document.getElementById('searchHint');
+
+  if(menuBtn){
+    menuBtn.addEventListener('click',function(){
+      var open=headNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+  }
+  if(headNav){
+    headNav.addEventListener('click',function(e){
+      if(e.target.tagName==='A' && window.matchMedia('(max-width:760px)').matches){
+        headNav.classList.remove('open');
+        if(menuBtn) menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  // 移动端搜索展开
+  if(searchBox && searchInput){
+    searchInput.addEventListener('focus',function(){searchBox.classList.add('open');});
+    searchInput.addEventListener('blur',function(){
+      if(!searchInput.value) searchBox.classList.remove('open');
+    });
+  }
+
+  // 本地查找索引
+  var index=[
+    {t:'火焰刀招式拆解',k:'火焰刀 掌缘送劲 武学 原文 第四十三回',id:'deep'},
+    {t:'小无相功版本差异',k:'小无相功 逍遥派 兼修 来源 版本 改编',id:'compare'},
+    {t:'少林寺演武原文',k:'少林 七十二绝技 演武 虚竹 小无相功 第四十三回',id:'deep'},
+    {t:'鸠摩智武功尽失',k:'枯井 散功 内力尽失 结局 段誉',id:'faq'},
+    {t:'大轮寺设定考',k:'大轮寺 吐蕃 大雪山东麓 寺院 设定',id:'featured'},
+    {t:'吐蕃国师称谓',k:'国师 护法国师 上师 称谓 僧侣',id:'guide'},
+    {t:'段誉对手戏',k:'段誉 六脉神剑 对手戏 同人',id:'comments'},
+    {t:'虚竹与鸠摩智',k:'虚竹 识破 小无相功 少林',id:'featured'},
+    {t:'影视版本口碑',k:'1982 1997 2003 2013 2021 2024 口碑 榜单',id:'rank'},
+    {t:'同人作品索引',k:'同人 索引 篇幅 完结 设定前提',id:'reco'},
+    {t:'台词版本对照表',k:'台词 对照 集数 版本 少林 羞辱句',id:'compare'},
+    {t:'原著内时间线',k:'时间线 第十四回 第二十三回 第四十回 第四十六回',id:'timeline'},
+    {t:'读者评论',k:'评论 讨论 反驳 留言',id:'comments'},
+    {t:'深度解析',k:'反派 判断 可核对 结构 权重',id:'deep'}
+  ];
+  function doSearch(){
+    var q=(searchInput.value||'').trim().toLowerCase();
+    if(!q){searchHint.classList.remove('show');searchHint.textContent='';return;}
+    var hits=index.filter(function(it){
+      return (it.t+' '+it.k).toLowerCase().indexOf(q)>-1;
+    }).slice(0,5);
+    if(hits.length===0){
+      searchHint.innerHTML='没有匹配到“'+q.replace(/[<>&]/g,'')+'”。可试试：火焰刀、小无相功、枯井、台词对照。';
+    }else{
+      searchHint.innerHTML=hits.map(function(it){
+        return '<a href="/#'+it.id+'" style="display:block;padding:4px 0;color:#22382e">'+it.t+'</a>';
+      }).join('');
+    }
+    searchHint.classList.add('show');
+  }
+  if(searchInput){
+    searchInput.addEventListener('input',doSearch);
+    searchInput.addEventListener('keydown',function(e){
+      if(e.key==='Enter'){
+        var first=searchHint.querySelector('a');
+        if(first){window.location.hash=first.getAttribute('href').slice(1);searchHint.classList.remove('show');}
+      }
+    });
+    document.addEventListener('click',function(e){
+      if(!searchBox.contains(e.target)) searchHint.classList.remove('show');
+    });
+  }
+
+  // 滚动高亮
+  var links=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections=links.map(function(a){return document.querySelector(a.getAttribute('href').slice(1));});
+  function onScroll(){
+    var pos=window.scrollY+140;
+    var cur=-1;
+    sections.forEach(function(s,i){
+      if(s && s.offsetTop<=pos) cur=i;
+    });
+    links.forEach(function(a,i){a.classList.toggle('active',i===cur);});
+    var topBtn=document.getElementById('toTop');
+    if(topBtn) topBtn.classList.toggle('show',window.scrollY>600);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  var topBtn=document.getElementById('toTop');
+  if(topBtn){
+    topBtn.addEventListener('click',function(){
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"杏吧鸠摩智",
+  "description":"围绕金庸《天龙八部》鸠摩智一角展开的二创资料整理站，收录人物设定考据、经典台词对照、同人作品索引、版本差异梳理与读者讨论精选。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"鸠摩智的火焰刀到底是什么路数？","acceptedAnswer":{"@type":"Answer","text":"原著写火焰刀时强调掌缘送劲、虚虚实实，与持刀劈砍无关，属于内力外放的掌法变体。影视版本为视觉考虑常加刀光，容易让人误以为是兵刃功夫。区分方法很简单：看他手上有没有持物。"}},
+    {"@type":"Question","name":"小无相功是鸠摩智自己练成的吗？","acceptedAnswer":{"@type":"Answer","text":"小说里他承认兼修小无相功，但未交代完整来历，只在与虚竹对答中露出破绽。逍遥派一系的功法如何流入吐蕃，书中留白。多数他从逍遥派偷学的说法来自改编补写，不属于原著明写内容。"}},
+    {"@type":"Question","name":"枯井之后他的武功真的全没了？","acceptedAnswer":{"@type":"Answer","text":"第四十六回写内力尽失，此后他转为讲经，未再出手。是否全无取决于对内力和招式记忆的区分：招式记忆书中未写消失，只是没有再用的场景。"}},
+    {"@type":"Question","name":"为什么不同版本的鸠摩智性格差别这么大？","acceptedAnswer":{"@type":"Answer","text":"差别主要来自台词取舍。1997 版放大傲气，2013 版删去羞辱句，性格就柔和许多。原著里他兼有礼数与执念，改编通常只强化其中一面，观众记住的往往是强化后的那面。"}},
+    {"@type":"Question","name":"大轮寺在书中有具体位置吗？","acceptedAnswer":{"@type":"Answer","text":"没有。书中只称大雪山大轮寺，方位、规模、僧侣数量都未展开。二创常见的东麓、山腰属于补充设定，引用时应标明是推断而非原文。"}},
+    {"@type":"Question","name":"读同人前需要先看原著吗？","acceptedAnswer":{"@type":"Answer","text":"建议先看第十四回至第四十六回，尤其是少林演武与枯井两段。同人作品常默认读者已知这两处，若跳过，容易把二创设定误当作原文情节。"}}
+  ]
+}
+</script>
+</body>
+                                       </html>
